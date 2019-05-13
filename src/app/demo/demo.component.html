@@ -1,0 +1,11 @@
+<h3>Template Driven Form Example</h3>
+
+<div class="form">
+  <form #regForm='ngForm' (ngSubmit)="onClickSubmit(regForm)">
+    <div><input type="text" placeholder="First name" name="fname" ngModel></div>
+    <div><input type="text" placeholder="Last name" name="lname" ngModel></div>
+    <div><input type="text" placeholder="Email ID" name="email" ngModel></div>
+    <div><button type="submit">Submit</button></div>
+  </form>
+</div>
+
